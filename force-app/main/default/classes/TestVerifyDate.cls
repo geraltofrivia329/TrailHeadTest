@@ -26,4 +26,13 @@ public class TestVerifyDate {
         Date resultdate1mth=VerifyDate.CheckDates(Date1, Date2);
         System.assertEquals(Date.NewInstance(2020,05,31) , resultdate1mth);
     } 
+    @isTest 
+    static void Date4()
+    {
+        Date Date1 = Date.NewInstance(2020,05,07);
+        Date Date2 = Date.newInstance(0);
+        Date resultdate1mth=VerifyDate.CheckDates(Date1, Date2);
+        System.assertEquals(Date.NewInstance(2020,05,01) , resultdate1mth);
+        
+    }
 }
