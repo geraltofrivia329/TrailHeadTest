@@ -1,5 +1,11 @@
-<apex:page >
-    <h1>
-        Hello World!
-    </h1>
+<apex:page sidebar="false" showHeader="false">
+    <h1>Hello World</h1>
+    <apex:pageBlock title="Hiya" >
+  <apex:pageBlockSection title="Schlermy Learmy">
+    Hi there ho there.
+    </apex:pageBlockSection>
+        <apex:pageBlockSection title="Another Section">
+        Hi again another section
+        </apex:pageBlockSection>
+        </apex:pageBlock>
 </apex:page>
