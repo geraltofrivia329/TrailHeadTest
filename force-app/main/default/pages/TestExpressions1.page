@@ -1,0 +1,8 @@
+<apex:page>
+    <apex:pageBlockSection>
+<p> Welcome {! $User.FirstName &' '& User.LastName}</p>
+<p> This is your role in SF. {!$UserRole.LastModifiedById}</p>
+
+
+</apex:pageBlockSection>
+</apex:page>
