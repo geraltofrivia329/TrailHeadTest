@@ -4,7 +4,8 @@
         <apex:pageBlockSection >
              First Name: {! Contact.FirstName } <br/>
             Last Name: {! Contact.LastName } <br/>
-            Owner Email: {! Contact.Owner.Email} <br/>
+            Account Name: {! Contact.AccountId} <br/>
+            Email: {!Contact.Email} <br/>
             
         </apex:pageBlockSection>
     </apex:pageBlock>
