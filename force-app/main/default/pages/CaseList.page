@@ -1,0 +1,10 @@
+<apex:page standardController="Case" recordSetVar="cases">
+    <apex:pageBlock title="Cases List">
+        <apex:pageBlockTable value="{! cases }" var="cs">
+            <apex:column value="{! cs.ContactId }"/>
+            <apex:column value="{! cs.ContactPhone }"/>
+            <apex:column value="{! cs.ClosedDate }"/>
+            <apex:column value="{! cs.Comments }"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>

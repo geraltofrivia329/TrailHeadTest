@@ -1,0 +1,10 @@
+<apex:page standardController="Opportunity" recordSetVar="opportunities">
+    <apex:pageBlock title="Opportunities List">
+        <apex:pageBlockTable value="{! opportunities }" var="os">
+            <apex:column value="{! os.AccountId }"/>
+            <apex:column value="{! os.Description }"/>
+            <apex:column value="{! os.Name }"/>
+            <apex:column value="{! os.StageName }"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>
