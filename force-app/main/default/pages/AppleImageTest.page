@@ -1,0 +1,6 @@
+<apex:page showHeader="True" sidebar="True" standardStylesheets="True">
+   <!-- Add static resources to page's <head> -->
+    <apex:image value="{! URLFOR($Resource.Apple,'apple.jpg')}"
+                width="50" height="50"/>
+   
+</apex:page>
