@@ -5,13 +5,18 @@
                 <apex:selectOptions value="{! listViewOptions }"/>
                 <apex:actionSupport event="onchange" reRender="contacts_list"/>
             </apex:selectList>
+            
         <apex:pageBlockTable value = "{! contacts}" var = "ct">
             <apex:column value = "{! ct.FirstName}" />
             <apex:column value = "{! ct.LastName}" />
+            <apex:inputField value = "{! ct.Email}"/>
+          
 
-
-            <apex:commandButton action="{!save}" value="save"/>
+          
 </apex:pageBlockTable>
+<apex:pageBlockButtons>
+    <apex:commandButton value="Save" action="{!save}"/>
+ </apex:pageBlockButtons>
     </apex:pageBlock>
 </apex:form>
 </apex:page>
