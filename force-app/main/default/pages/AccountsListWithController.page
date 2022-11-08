@@ -1,0 +1,13 @@
+<apex:page controller="AccountsListWithController">
+    <apex:form >
+        <apex:pageBlock title="Accounts List" id="accounts_list">
+        <apex:pageBlockTable value="{! accounts }" var="acc">
+    <apex:column value="{! acc.Name }"/>
+    <apex:column value="{! acc.AccountNumber }"/>
+    <apex:column value="{! acc.Active__c }"/>
+    <apex:column value="{! acc.AnnualRevenue }"/>
+</apex:pageBlockTable>
+            <apex:commandButton action="{!save}" value="Hi"/>
+        </apex:pageBlock>
+   	</apex:form>
+</apex:page>
